@@ -1,0 +1,128 @@
+blockquote p:before {
+    content: "“";
+    /*margin-bottom: -1em;*/
+    padding-bottom: -150.15px;
+    /*text-align: right;*/
+    width: 0.85em;
+
+}
+blockquote p:before, blockquote p:after {
+ 
+    display: inline-block;
+    font-size: 1.5em;
+    margin-top: -2.15em;
+    position: relative;
+    top: 0.15em;
+}
+blockquote p:after {
+    content: "”";
+    margin-right: -0.5em;
+    width: 0.5em;
+}
+blockquote
+{
+border-left:0px solid black;
+}
+
+
+
+.testimonial-gallery li {
+    background: none repeat scroll 0 0 #fff;
+    padding: 10px !important;
+}
+
+
+
+
+
+
+.testimonial {
+    background-image: url("../images/extra_clean_paper.gif");
+    border: 1px solid #ddd;
+    float: left;
+    padding: 20px 25px;
+   border-radius:10px;
+}
+.author-wrapper {
+    float: right;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+.boxshadow .author-wrapper .arrow {
+   /* border-left: 30px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 30px solid rgba(34, 34, 34, 0.1);*/
+    float: left;
+    height: 0;
+    margin-left: 3.125rem;
+    position: relative;
+    width: 0;
+}
+.boxshadow .author-wrapper .arrow:before {
+    /*border-color: #fff transparent transparent;
+    border-left: 30px solid transparent;
+    border-right: 0 solid transparent;
+    border-style: solid;
+    border-top: 30px solid #fff;
+    bottom: 0;*/
+    /*content: "";*/
+    display: block;
+    height: 0;
+    left: 0;
+    margin-left: -1.75rem;
+    position: absolute;
+    width: 0;
+    z-index: 100;
+}
+.author-wrapper .cite {
+    float: right;
+    font-weight: bold;
+   
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.author-wrapper .cite span {
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+
+
+
+.testimonial.smallerize  p {
+    font-size: 14px;
+
+}
+.testimonial.biggerize blockquote {
+   
+    padding: 0 0 0 40px;
+}
+.testimonial.biggerize blockquote:before {
+    font-size: 4.375rem;
+    top: -22px;
+}
+.testimonial.biggerize  p {
+    font-size: 1.25rem;
+}
+.testi{
+float:right;
+background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+	
+}
+#testvideo
+{
+height:89%;
+}
+#testvideo1
+{
+height:90%;
+}
+#testvideo2
+{
+height:75%;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+    
+    <head>
+        <!-- BSTempl -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <!-- Bootstrap responsive -->
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- Font awesome - iconic font with IE7 support -->
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/font-awesome-ie7.css" rel="stylesheet">
+        <!-- Bootbusiness theme -->
+        <link href="css/boot-business.css" rel="stylesheet">
+        <!-- BSTempl End-->
+        <link href="css/guvi.css" rel="stylesheet">
+        <link href="css/video-js.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/thumbnail.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script src="js/video.js"></script>
+        <script src="js/vjs.youtube.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/googleAnalytics.js"></script>
+
+        <script src="js/data.js"></script>
+        <style>
+            #emptydiv {
+                margin-top:50px;
+            }
+            .sidebar-nav {
+                background-color:yellow;
+            }
+        </style>
+        <style>
+            #hover-cap-4col .thumbnail {
+                position:relative;
+                overflow:hidden;
+            }
+            .caption {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.4);
+                width: 100%;
+                height: 100%;
+                color:#fff !important;
+            }
+            .caption p {
+                padding:6px;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <!-- Start: HEADER -->
+        <header>
+            <!-- Start: Navigation wrapper -->
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner  Arun_header">
+                    <div class="container ">
+                        <a href="index.html" class="brand brand-bootbus">GUVI - Share what you know</a>
+                        <!-- Below button used for responsive navigation -->
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <ul class="nav pull-right">
+                            <li>
+                                <a href="PublicPlaylists.html">Public Playlist</a>
+                            </li>
+                            <li>
+                                <a href="BuildurOwn.html">Build your own</a>
+                            </li>
+                            <li>
+                                <a href="JoinUs.html">
+                                    <i class="icon-tint"></i>Join Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Navigation wrapper -->
+        </header>
+        <!-- End: HEADER -->
+        <div id="emptydiv">
+            <br />
+            <br />
+            <br />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="hangover" class="span9">
+                    <ul class="thumbnails" id="hover-cap-4col"></ul>
+                </div>
+                <div class="span3"></div>
+                <!-- <div class="span4">
+    
+    <div id="videos">
+
+    </div></div>-->
+                <div class="well sidebar-nav span2">
+                    <span class="badge badge-warning">Popular</span>
+                    <span class="badge badge-warning">Popular</span>
+                    <span class="badge badge-warning">Popular</span>
+                    <span class="badge badge-warning">Popular</span>
+                    <span class="badge badge-warning">Popular</span>
+                    <span class="badge badge-warning">Popular</span>
+                    <span class="badge badge-warning">Popular</span>
+                    <span class="badge badge-warning">Popular</span>
+                    <ul class="nav">
+                        <li>Tags</li>
+                        <li class="active">
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>Sidebar</li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>Sidebar</li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.well -->
+            </div>
+        </div>
+        </div>
+        <div id="my_div1"></div>
+        </div>
+        <div id="example" class="modal">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">�</a>
+                <h3>This is a Modal Heading</h3>
+            </div>
+            <div class="modal-body">
+                <h4>Text in a modal</h4>
+                <p>You can add some text here.</p>
+                <div id="vid">
+                    <video id="example_video_1" class="video-js vjs-default-skin" oncontextmenu="return false" controls preload="auto" width="540" height="264"></video>
+                </div>
+                <!-- END vid DIV -->
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-success">Call to action</a>
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript" src="js/videolist.js"></script>
+        <script src="js/bootstrap-modal.js"></script>
+    </body>
+
+</html>

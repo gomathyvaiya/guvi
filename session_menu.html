@@ -1,0 +1,101 @@
+<style>
+#logout_ment{
+position:relative;
+margin-top:30%;
+}
+</style>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Guvi</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html" title="">Home</a>
+                </li>
+                
+                <li>
+                    <a href="PublicPlaylists.html" title="">Video</a>
+                </li>
+
+                <li>
+                    <a href="BuildurOwn.html" title="">Bootcamp</a>
+                </li>
+
+                <li>
+                    <a href="wishlist.html" title="">Mentorship</a>
+                </li>
+
+                <li>
+                    <a href="http://guviblogs.wordpress.com" title="">Blogs</a>
+                </li>
+                       
+                <!--<li>
+                    <a href="bookmarks.html" title="">Book Marks</a>
+                </li>
+                      
+                <li>
+                    <a href="JoinUs.html" title="">Join Us</a>
+                </li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+                        <div>
+                            <button id="logout_ment" type="button" class="btn btn-success">Log Out</button>
+                        </div>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+$('#logout_ment').click(function() {
+		
+		gsession.clearSession('hash_val');
+		gsession.clearSession('lang');
+		gsession.clearSession('mail');
+		gsession.clearSession('cusername');
+		gsession.clearSession('is_reg_video_now');
+		gsession.clearSession('is_reg_mentor_now');
+		gsession.clearSession('is_login_video');
+		gsession.clearSession('video_come_menti');
+		gsession.setSession('after_logout','1');
+		
+		window.location = "index.html";		
+		
+	
+});	
+var video_reg=gsession.getSession('is_reg_video_now');
+	var mentor_reg=gsession.getSession('is_reg_mentor_now'); //alert(mentor_reg);
+	var after_logout=gsession.getSession('after_logout');//alert(after_logout);
+	//console.log(mentor_reg);
+	var video_come=gsession.getSession('video_come_menti');
+	
+		if(video_come==1){
+				//alert("hai");
+		}
+		else if(mentor_reg==0)
+		{
+			//alert("hai");
+			window.location="index.html";
+		}
+		else if( after_logout==1 && mentor_reg==null && video_come==null )
+		{
+			window.location="index.html";
+}
+
+</script>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GUVI - SHARE WHAT YOU KNOW ">
+        <meta name="guvi" content="Your name">
+        <title>GUVI</title>
+        <!-- Bootstrap -->
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="css/bootstrap.css" rel="stylesheet">
+	<!--<link href="css/boot-business.css" rel="stylesheet">-->
+	<link href="css/admin.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+	
+</head>
+<body id="configure">
+<div id="admin_menu"></div>
+<h2 align="center">Add Bootcamp</h2>
+<br>	
+<div class="container"  style="background-color:#fff">
+	<div class="row row-centered">
+		<div class="col-xs-6 col-centered" style="margin-left:25%">
+
+		<form role="form-group" id="add" name="add" action="" accept-charset="UTF-8" method="post">
+			<label>Bootcamp Name</label>
+				<div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-caret-square-o-down"  ></i></span>
+                                <input id="name" name="name" type="text" class="form-control" placeholder="Bootcamp Name" required/>
+                             	</div><label>Date</label>
+					<div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"  ></i></span>
+                                            <input id="event_date" class="datepicker form-control" name="event_date" type="date"  placeholder="Date" required />
+                                        </div><label>Price</label>
+					<div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-inr"  ></i></span>
+                                            <input id="price" name="price" type="text" class="form-control"  placeholder="Price" required />
+                                       </div><label>Total Count</label>
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                                            <input id="count" name="count" type="text" class="form-control"  placeholder="Total Count" required/>
+                                        </div>
+		<center><!--<input type="text" id="bootcamp_id" name="bootcamp_id">-->
+			<button id="submit" type="button" class="btn btn-success" name="enter" >Add</button>
+		</center>
+<br>
+		</form>
+		</div>
+  	</div>
+</div>
+<div id="footer"></div>
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/session_details.js"></script>
+	 <script type="text/javascript" src="js/framework.js"></script>
+        <script type="text/javascript" src="js/admin_menu.js"></script>
+	
+	<script type="text/javascript" src="js/edit.js"></script>
+	<script type="text/javascript" src="js/ment_admin.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script>
+$(document).ready(function() {
+	$(".datepicker").datepicker();
+	 $("#price").keypress(function (e) {
+		//alert("hai");
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        //display error message
+      // document.getElementById('phone').placeholder="Enter The Valid Mobile Number";
+	
+               return false;
+    }
+   });
+ $("#count").keypress(function (e) {
+		//alert("hai");
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        //display error message
+      // document.getElementById('phone').placeholder="Enter The Valid Mobile Number";
+	
+               return false;
+    }
+   });
+	$("#event_date").keypress(function (e) {
+		//alert("hai");
+     //if the letter is not digit then display error and don't type anything
+     //if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        //display error message
+      // document.getElementById('phone').placeholder="Enter The Valid Mobile Number";
+	
+               return false;
+    //}
+   });
+
+	});
+
+</script>
+
+      
+    
+      
+   
+ <style>
+.datepicker{z-index:1151 !important;}
+</style>         
+</body>
+</html>

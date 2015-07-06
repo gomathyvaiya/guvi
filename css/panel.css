@@ -1,0 +1,109 @@
+.shape{	
+	border-style: solid; border-width: 0 70px 40px 0; float:right; height: 0px; width: 0px;
+	-ms-transform:rotate(360deg); /* IE 9 */
+	-o-transform: rotate(360deg);  /* Opera 10.5 */
+	
+
+}
+.offer{
+	background:#fff; border:1px solid #ddd; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); margin: 15px 0; overflow:hidden;
+}
+.offer-radius{
+	border-radius:7px;
+}
+
+.offer-sunflower  {	border-color: #f1c40f; }
+.offer-sunflower .shape{
+	border-color: transparent #f1c40f transparent transparent;
+	border-color: rgba(255,255,255,0) #f1c40f rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.offer-alziran {	border-color: #e74c3c; }
+.offer-alziran .shape{
+	border-color: transparent #e74c3c transparent transparent;
+	border-color: rgba(255,255,255,0) #e74c3c rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.offer-LightPurple {	border-color: #7e3878; }
+.offer-LightPurple .shape{
+	border-color: transparent #7e3878 transparent transparent;
+	border-color: rgba(255,255,255,0) #7e3878 rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.offer-amethyst {	border-color: #9b59b6; }
+.offer-amethyst .shape{
+	border-color: transparent #9b59b6 transparent transparent;
+	border-color: rgba(255,255,255,0) #9b59b6 rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+
+.offer-peterriver {	border-color: #3498db }
+.offer-peterriver .shape{
+	border-color: transparent #3498db transparent transparent;
+	border-color: rgba(255,255,255,0) #3498db rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+
+.offer-pumkin {	border-color: #d35400; }
+.offer-pumkin .shape{
+	border-color: transparent #d35400 transparent transparent;
+	border-color: rgba(255,255,255,0) #d35400 rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.offer-Magenta {	border-color: #ff0097; }
+.offer-Magenta .shape{
+	border-color: transparent #ff0097 transparent transparent;
+	border-color: rgba(255,255,255,0) #ff0097 rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.offer-Orange {	border-color: #e3a21a; }
+.offer-Orange .shape{
+	border-color: transparent #e3a21a transparent transparent;
+	border-color: rgba(255,255,255,0) #e3a21a rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.offer-danger {	border-color: #d9534f; }
+.offer-danger .shape{
+	border-color: transparent #d9534f transparent transparent;
+	border-color: rgba(255,255,255,0) #d9534f rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.offer-success {	border-color: #5cb85c; }
+.offer-success .shape{
+	border-color: transparent #5cb85c transparent transparent;
+	border-color: rgba(255,255,255,0) #5cb85c rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.offer-default {	border-color: #999999; }
+.offer-default .shape{
+	border-color: transparent #999999 transparent transparent;
+	border-color: rgba(255,255,255,0) #999999 rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.offer-primary {	border-color: #428bca; }
+.offer-primary .shape{
+	border-color: transparent #428bca transparent transparent;
+	border-color: rgba(255,255,255,0) #428bca rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.offer-info {	border-color: #5bc0de; }
+.offer-info .shape{
+	border-color: transparent #5bc0de transparent transparent;
+	border-color: rgba(255,255,255,0) #5bc0de rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.offer-warning {	border-color: #f0ad4e; }
+.offer-warning .shape{
+	border-color: transparent #f0ad4e transparent transparent;
+	border-color: rgba(255,255,255,0) #f0ad4e rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+.shape-text{
+	color:#fff; font-size:12px; font-weight:bold; position:relative; right:-40px; top:2px; white-space: nowrap;
+	-ms-transform:rotate(30deg); /* IE 9 */
+	-o-transform: rotate(360deg);  /* Opera 10.5 */
+	-webkit-transform:rotate(30deg); /* Safari and Chrome */
+	transform:rotate(30deg);
+}	
+.offer-content{
+	padding:0 20px 10px;
+}
+
+.offer:hover{
+border-radius:10px;
+
+}

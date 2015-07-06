@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GUVI - SHARE WHAT YOU KNOW ">
+        <meta name="guvi" content="Your name">
+        <title>GUVI</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="css/boot-business.css" rel="stylesheet">-->
+	<link href="css/guvi1.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+<style>
+.panel-body
+{
+padding:20px;
+text-align:left;
+}
+.load
+{
+margin-top:30px;
+margin-left:10px;
+}
+
+label{
+font-size:12px;
+}
+    </style>
+<script type="text/javascript">
+var pageNo=2.1;
+</script>
+</head>
+<body id="video">
+<div id="menu1"></div>
+    <div class="container">
+        <div class="row text-center pad-top ">
+            <div class="col-md-12">
+                <h2>Create Your Guvi Account</h2>
+            </div>
+        </div><hr>
+         <div class="row  pad-top">
+		<div class="col-md-8">
+			<h1 align="center">Learn through Tech videos in Native Language.</h1>
+			
+                </div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+                            <div class="panel-heading">
+                        <strong>   Please Register For Learning </strong>  
+                            </div>
+                            <div class="panel-body">
+                                <form role="form" id="register" name="register" action="" accept-charset="UTF-8" method="post">
+<br/><label>Name</label>
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                                            <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" maxlength="50"/>
+                                        </div><label>Email</label>
+
+                                     <span id = "user-result">
+				<img align="right" id="loader" class="load" src="images/ajax-loader.gif" style="display:none;"/>
+				<img align="right" id="avail" class="load" src="images/available.png" style="display:none;"/>
+				<img align="right" id="notavailable" class="load" src="images/not-available.png" style="display:none;"/> </span>
+                                         <div class="form-group input-group" >
+                                            <span class="input-group-addon">@</span>
+                                            <input id="email" name="email" type="email" class="form-control" placeholder="Your Email" maxlength="80"/>
+                                        </div><div id="hello"></div><label>Password</label>
+                                      <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                                            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" maxlength="30"/>
+                                        </div><label>Confirm Password</label>
+                                     <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                                            <input type="password" name="re_password" id="re_password" class="form-control" placeholder="Retype Password" onChange="checkPasswordMatch();" maxlength="30"/> 
+                                        </div>
+<div id="divCheckPasswordMatch"></div><label>Preferred Language</label>
+					<div class="form-group input-group">
+                                  <span class="input-group-addon"><i class="fa fa-caret-square-o-down"  ></i></span>
+                                 <select class="form-control" id="lang1" name="lang" required>
+				     <option>Preferred_Language</option>
+                                      <option>Tamil</option>
+                                      <option>English</option>
+                                      <option>Telugu</option>
+                                      <option>Kannada</option>
+                                      <option>Hindi</option>
+                                      <option>Bengali</option>
+                                 </select>
+                              </div>
+					<input type="hidden" id="skill" value="null"/>
+                                     <input type="hidden" id="mentor_hide" value="0"/>
+                                     <button id="registerNew" type="button" name="enter" class="btn btn-success ">Register Me</button>
+                                    
+                                    <span id="spinner" style="display:none;">
+    					<img src="/images/ajax-loader1.gif" width="5%" height="5%" alt="Loading..." />Sending Mail..Please wait...</span>
+                                    </form>
+                            </div>
+                           
+                        </div>
+                    </div>				
+			
+		</div>
+</div>
+<div id="footer"></div>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>              
+	<script type="text/javascript" src="js/framework.js"></script>
+	<script type="text/javascript" src="js/session_details.js"></script>
+	<script type="text/javascript" src="js/loadmenu.js"></script>  
+	<script type="text/javascript" src="js/googleAnalytics.js"></script>
+	<script type="text/javascript" src="js/video_users.js"></script>
+</body>
+</head>

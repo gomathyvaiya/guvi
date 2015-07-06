@@ -1,0 +1,175 @@
+/* custsom css for GUVI ***/
+/* create by muruga **/
+/* created date dec-25-2013  */
+body{
+	padding-top:0px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+  left: 0;
+
+  margin-bottom: 0;
+  position: relative;
+  right: 0;
+  z-index: 0;
+  height:120px;
+}
+.Arun_header {
+	/*padding:0px;*/
+}
+.public-playlist .navbar-inverse{
+	background:#fff;	
+}
+.public-playlist .navbar-inverse{
+	margin-top:20px;
+}
+
+.navbar .nav > li {
+  border: medium none;
+}
+
+.public-playlist .panel-container{
+	padding-top:20px;
+}
+
+.public-playlist .navbar .nav > li:first-child {
+	border-radius:0px;
+}
+
+.public-playlist .navbar-inverse .nav  li  a {
+  color: #222;
+}
+
+.public-playlist .navbar-inverse .nav  li.active a {
+	color:#fff;
+}
+
+.public-playlist .tab-container .panel-container {
+  clear: both;
+  padding:20px;
+}
+
+.public-playlist .tab-container .panel-container{
+	border-top:none;
+	border-top-left-radius:0px;
+	border-top-right-radius:2px;
+}
+.public-playlist .navbar-inverse .nav  li.active a{
+	border-radius:0;
+}
+.public-playlist .navbar-inverse .nav  li a:hover{
+	border-radius:0;
+}
+
+#tab-container ul.etabs  {
+	border-bottom:1px solid #DDDDDD;
+	width: 100%;
+	border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.nav-tabs > li {
+    margin-bottom: -1px;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: #DDDDDD #DDDDDD rgba(0, 0, 0, 0);
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #555555;
+    cursor: default;
+}
+
+#feature-list .panorama-section .tile-column-span-2, #feature-list .panorama-section .tile-column-span-1{
+	width:46%;
+}
+
+#FPL .play-left1 {
+	float: left;
+    width: 50%;
+}
+
+.play-left3{
+	float:left;
+	width:25%;
+}
+
+.play-left4{
+	float:left;
+	width:25%;
+}
+
+#current-list .tile-column-span-2{
+	width:95%;
+}
+
+.play-left5{
+	float: left;
+    width: 31.5%;
+}
+.lang-select{
+	margin-left: 12px;
+    margin-top: 9px;
+	border-radius:0px;
+}
+
+/* Custom theme for Ajax popups  */
+
+#pop{
+	display: block;
+	border: 1px solid gray;
+	width: 65px;
+	text-align: center;
+	padding: 6px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin: 0 auto;
+}
+.overlay-bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	cursor: pointer;
+	background: #000; /* fallback */
+	background: rgba(0,0,0,0.75);
+}
+#overlay_form{
+	background: #fff;
+		padding: 1%;
+		width: 40%;
+		position: relative;
+		top: 15%;
+		left: 50%;
+		margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+		cursor: default;
+		border-radius: 4px;
+		box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+	.overlay-content {
+		background: #fff;
+		padding: 1%;
+		width: 40%;
+		position: relative;
+		top: 15%;
+		left: 50%;
+		margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+		cursor: default;
+		border-radius: 4px;
+		box-shadow: 0 0 5px rgba(0,0,0,0.9);
+	}
+
+
+
+
+
+
+
+
+

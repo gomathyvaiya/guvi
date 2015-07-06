@@ -1,0 +1,18 @@
+﻿
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+.panel-body{
+background-color:#f5f5f5;
+}
+.panel-default > .panel-heading {
+    background-color: #428bca;
+    border-color: #ddd;
+    color: #fff;
+}

@@ -1,0 +1,74 @@
+			.container
+				{
+				padding:0 0 0 0;
+				}
+			
+			.row,.table
+				{
+				font-family: "Verdana", serif;
+				line-height: 2.5;
+				font-size:13px;
+				
+				
+				}
+			
+			
+			#mymodal
+			{
+			padding:20px;
+			margin-top:20%;
+
+			}
+			#email
+			{
+			width:70%;
+			
+			}
+			
+			
+			#head
+			{
+
+			margin-left:0%;
+			margin-right:0%;
+			width:100%;
+			}
+
+			.demo li
+			{
+			background:none;
+			}
+			.thin
+			{
+			font-size: 15;
+			line-height:2.5;
+
+			}
+			#add
+			{
+			width:50%;
+			margin-top:8%;
+			}
+
+			.boot
+			{
+			/*padding:0 0 0 24px;*/
+			float:left;
+			width:50%;
+			}
+			.full
+			{
+			margin:0 10 10 10;
+			}
+			.font
+			{
+			font-size:16px;
+			font-family: "Verdana", serif;
+			}
+		 	#one li{
+      
+			      line-height:2;
+			      padding-left:8%;
+			      text-align: justify;
+			      font-size:13;
+			    }

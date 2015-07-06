@@ -1,0 +1,171 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GUVI </title>
+
+   <link rel="publisher" href="https://plus.google.com/117689250782136016574">
+
+		 <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap responsive -->
+    <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!-- Font awesome - iconic font with IE7 support --> 
+    <link href="../../css/font-awesome.css" rel="stylesheet">
+    <link href="../../css/font-awesome-ie7.css" rel="stylesheet">
+    <!-- Bootbusiness theme -->
+    <link href="../../css/boot-business.css" rel="stylesheet">
+	
+	<link href="../../css/guvi.css" rel="stylesheet">
+<script src="../../js/jquery-1.9.1.min.js"></script>
+<script src="../../js/sublime_video.js"></script>
+
+<!--  <script type="text/javascript" src="../../js/session1.js"></script>   -->
+
+<script type="text/javascript" src="../../js/jquery.youtubeplaylist.js"></script>
+<script type="text/javascript" src="../../js/googleAnalytics.js"></script>
+
+	   <link rel="stylesheet" type="text/css" href="../../css/feedback.css" />
+
+<body id="abc" pname="menu_player">
+
+	<header>
+	<div id="menu_style">
+	
+	</div> 
+	</header>
+  <h3>C TUTORIALS</h3>
+  <div class="player"></div>
+  
+  <h3>Playlist</h3>
+  <div class="playlist">
+    <ul>
+      <li><a href="" data-index="1">C in Telugu - 1 - Main</a></li>
+      <li><a href="" data-index="2">C tutorial in telugu for beginners - 2 - Hello World</a></li>
+      <li><a href="" data-index="3">C tutorial in telugu for beginners - 3 -Simple Functions</a></li>
+      <li><a href="" data-index="4">C tutorial in telugu for beginners - 4 - First Variable</a></li>
+      <li><a href="" data-index="5">C tutorial in telugu for beginners - 5 - More about variables</a></li>
+	   <li><a href="" data-index="6">C tutorial in telugu for beginners - 6 - More Variables : Float, Char</a></li>
+      <li><a href="" data-index="7">C tutorial in telugu for beginners - 7 - If statement</a></li>
+      <li><a href="" data-index="8">C tutorial in telugu for beginners - 8 - Else and Nested Ifs</a></li>
+      <li><a href="" data-index="9">C tutorial in telugu for beginners - 9 - Relational Operators</a></li>
+      <li><a href="" data-index="10">C tutorial in telugu for beginners - 10 - Pre post increment operators, modulus and short circuiting</a></li>
+	   <li><a href="" data-index="11">C tutorial in telugu for beginners - 11 - For loop basics</a></li>
+      <li><a href="" data-index="12">C tutorial in telugu for beginners - 12 - While and Do While</a></li>
+      <li><a href="" data-index="13">C tutorial in telugu for beginners - 13 - Break and Continue</a></li>
+      <li><a href="" data-index="14">C in Telugu - 14 - Switch Statement</a></li>
+	  
+	  
+      <li><a href="" data-index="15">C in Telugu - 15 - Functions and Return  Values</a></li>
+      <li><a href="" data-index="16">C in Telugu - 16 - more about Functions</a></li>
+      <li><a href="" data-index="17">C in Telugu - 17 - Arrays</a></li>
+      <li><a href="" data-index="18">C in Telugu - 18 - Character Arrays and Strings</a></li>
+      <li><a href="" data-index="19">C in Telugu - 19 - 2 Dimensional Arrays</a></li>
+	   <li><a href="" data-index="20">C in Telugu - 20 - C Memory, Storage and Pointers Introduction</a></li>
+      <li><a href="" data-index="21">C in Telugu - 21 - More about Memory, Storage and Pointers</a></li>
+      <li><a href="" data-index="22">C in Telugu - 22 - Pointers, Arrays and Pointer Arithmetic</a></li>
+      <li><a href="" data-index="23">C in Telugu - Printf</a></li>
+      <li><a href="" data-index="24">C in Telugu - Scanf</a></li>
+	   <li><a href="" data-index="25">C tutorial for beginners in Telugu - Preprocessor directives</a></li>
+      <li><a href="" data-index="26">C tutorial for beginners in Telugu - Local, Static, External variables</a></li>
+      <li><a href="" data-index="27">C tutorial for beginners in Telugu - Structures</a></li>
+      <li><a href="" data-index="28">C tutorial for beginners in Telugu - Structures 2</a></li> 
+	  
+	  <li><a href="" data-index="29">C tutorial for beginners in Telugu - Structure Array 3</a></li>
+      <li><a href="" data-index="30">C tutorial for beginners in Telugu - File Handling</a></li>
+      <li><a href="" data-index="31">C tutorial for beginners in Telugu - File Handling 2</a></li> 
+	  <li><a href="" data-index="32">C tutorial for beginners in Telugu - precedence and associativity</a></li> 
+		
+    </ul>
+  </div>    
+  <script>
+  
+      $(function() {
+        var playerEl, playlistEl, playListData, renderPlayer;
+    
+        playListData = {
+          "1": "0Asyny8Wto4" ,
+          "2": "RPJx7mCYXzU" ,
+          "3": "y8kyuM9ijW8" ,
+          "4": "ZFyha-J43B0" ,
+          "5": "Tv_flL7dMJQ" ,
+		
+          "6": "9pp3PjpOxQM" ,
+          "7": "gay-Bt-l-zM" ,
+          "8": "2FyUKVH5YuI" ,
+          "9": "9LWOO5GCwMU" ,	
+		    "10": "KQN6NS09-vg" ,
+          "11": "qzTppdy2pKg" ,
+          "12": "mk3j81Ik7Mc" ,
+          "13": "xc0v0pi-ro4" ,
+          "14": "pcfOvR1J9ow" ,
+		  
+		   "15": "Ym9-Ytq35lg" ,
+          "16": "Khzz9Wb1Bss" ,
+          "17": "mFry_FrZQnk" ,
+          "18": "TDEdNRlVPq0" ,
+          "19": "8BmEKquD96k" ,
+		
+          "20": "0LUrTE0kAOU" ,
+          "21": "2zg00gS3-Ts" ,
+          "22": "8dN_oyNIe-Q" ,
+          "23": "w_1rwOByk-c" ,	
+		    "24": "D0N1W4B18qk" ,
+          "25": "XoREy27nlpE" ,
+          "26": "VhT74qtD2yY" ,
+          "27": "yFkrhRn0Y2k" ,
+          "28": "ONfajSs-1QI" , 
+		  
+		  "29": "x8m9fzkZvJs" ,
+          "30": "ecKnkwggUcQ" ,
+          "31": "0hLaxeBzXbk" ,
+          "32": "e244mjvakFs" , 
+        };
+        
+        playerEl   = $('.player');
+        playlistEl = $('.playlist');
+        
+        renderPlayer = function(youtubeId) {
+          //BN0JlMZCtNU
+          var html = '<video id="' + youtubeId + '" width="640" ' + 
+                     'height="360" data-uid="' + youtubeId + '" data-youtube-id="' +youtubeId + '" preload="none"></video>';
+          
+          return html;           
+        };
+
+        sublime.load();        
+        playerEl.html( renderPlayer(playListData["1"]) );
+        sublime.ready(function() {
+          sublime.prepare(playListData["1"]);
+        });
+        
+        $('.playlist a').click(function(evt) {
+          var videoId;
+          
+          evt.preventDefault();
+          videoId = playListData[$(this).data('index')];
+          
+          playerEl.html( renderPlayer(videoId) );
+          sublime.prepare(videoId);
+        });
+      });   
+       
+  </script>
+
+<div id="feedback">
+
+	<!-- Five color spans, floated to the left of each other -->
+
+</div>
+
+<!-- AddThis Smart Layers BEGIN -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dbe414f45402a0b"></script>
+ <script type="text/javascript" src="../../js/social_network.js"></script>
+<!-- AddThis Smart Layers END -->
+
+	
+</body>
+   <!-- <script type="text/javascript" src="../../js/sendtopic.js"></script>  -->
+<script type="text/javascript" src="../../js/menu_selector_player.js">  </script>
+<script  type="text/javascript" src="../../js/wishlist.js"></script>
+   <script type="text/javascript" src="../../js/feedback.js"></script>
+</html>

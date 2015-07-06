@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GUVI - SHARE WHAT YOU KNOW ">
+        <meta name="guvi" content="Your name">
+        <title>GUVI</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/guvi1.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+	
+        
+       
+<style>
+
+.panel-body
+{
+    padding: 20px;
+    text-align:left;
+}
+</style>
+<script type="text/javascript">
+var pageNo=4.2;
+</script>
+</head>
+<body id="mentor">
+<div id="session_menu"></div>
+    <div class="container">
+        <div class="row text-center pad-top">
+            <div class="col-md-12">
+                <h2>Take Your Test Now</h2>
+            </div>
+        </div><hr>
+             <div class="row  pad-top">
+		 <div class="col-md-10 col-md-offset-2">
+<div class="col-md-10">
+			
+				<div class="panel panel-default">
+                            <div class="panel-heading">
+                        <strong>   Take Your Test Now</strong>  
+                            </div>
+                            <div class="panel-body">
+                                <form role="form" id="register" name="register" action="" accept-charset="UTF-8" method="post">
+						<label for="q1">Question1</label><div id="qus1"></div>
+                                        <div class="form-group input-group">
+						
+                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                                            <textarea id="q1" class="form-control" placeholder="Enter Your Answer"></textarea>
+                                        </div>
+                                     <label for="q2">Question2</label><div id="qus2"></div>
+                                         <div class="form-group input-group" >
+                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                                            <textarea id="q2" class="form-control" placeholder="Enter Your Answer"></textarea>
+                                        </div>
+				<label for="q3">Question3</label><div id="qus3"></div>
+                                      <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                                            <textarea id="q3" class="form-control" placeholder="Enter Your Answer"></textarea>
+                                        </div>
+				<label for="q4">Question4</label><div id="qus4"></div>
+                                     <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                                            <textarea id="q4" class="form-control" placeholder="Enter Your Answer"></textarea>
+                                        </div>
+				<label for="q5">Question5</label><div id="qus5"></div>
+
+					<div class="form-group input-group">
+                                  <span class="input-group-addon"><i class="fa fa-tag" ></i></span>
+                                 <textarea id="q5" class="form-control" placeholder="Enter Your Answer"></textarea>
+                              </div>
+		 <textarea id="qno" class="form-control" style="display:none;"></textarea>
+			
+                                     <button id="submit_answers" type="button" name="enter" class="btn btn-success ">Submit Answers</button> <a href="PublicPlaylists.html">No thanks,I will take the test later</a>
+                                    
+                                    
+                                    </form>
+                            </div>
+                           
+                        </div></div></div>
+</div>
+			
+    </div>
+</div>
+<div id="footer"></div>
+                <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/session_details.js"></script>
+		<script type="text/javascript" src="js/loadmenu.js"></script>
+	 	<script type="text/javascript" src="js/framework.js"></script>
+
+		
+		<script type="text/javascript" src="js/test.js"></script>
+		<script type="text/javascript" src="js/store.js"></script>
+	<script>
+	var video_reg=gsession.getSession('is_reg_video_now');
+	var mentor_reg=gsession.getSession('is_reg_mentor_now');
+	//console.log(mentor_reg);
+	//alert(mentor_reg);
+	var hash_val=gsession.getSession('hash_val');
+	var lang=gsession.getSession('lang');
+	var cuser=gsession.getSession('cusername');
+	var video_come=gsession.getSession('video_come_menti');
+	
+		if(video_come==1){
+				//alert("hai");
+		}
+	
+	else if(mentor_reg!=1){
+		if(hash_val){
+		
+		window.location="index.html";
+			}
+	}
+	
+	</script>
+</body>
+</head>

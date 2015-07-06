@@ -1,0 +1,144 @@
+.wrapper-dropdown-5 {
+    /* Size & position */
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    padding: 12px 15px;
+    height: 50px;
+    /* Styles */
+    border-color: #82d1ff transparent;
+    border-radius: 0px;
+    /*   box-shadow: 0 1px 0 rgba(0,0,0,0.2);   box shadow  */
+    cursor: pointer;
+    outline: none;
+}
+#image
+{ 
+    width:50px;
+    height:46px;
+    border:solid #666;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+  /*  background: ('../../../../../img/images/thumbs/ragu_small.jpg');*/
+	background:url('../../img/profile_mini.png') ;
+    -webkit-border-radius:5px;
+    margin-top:15px;
+    margin-left:-14px;
+}
+.wrapper-dropdown-5:after { /* Little arrow */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: 25px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: silver transparent;   
+}
+.wrapper-dropdown-5 .dropdownset {
+    /* Size & position */
+    position: absolute;
+    /*top: 100%;  */ /* for dropdown top position  */
+    left: -22px;
+    right: 0;
+    /* Styles */
+    background:  #80b300;
+    border-radius: 0px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+}
+.dropdownset
+{
+	width:173px;
+}
+.wrapper-dropdown-5 .dropdownset li {
+    padding: 0 10px ;
+}
+.wrapper-dropdown-5 .dropdownset li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 0;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid #e6e8ea;
+}
+.wrapper-dropdown-5 .dropdownset li:last-of-type a {
+    border: none;
+}
+.wrapper-dropdown-5 .dropdownset li i {
+    width:200px;
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+/* Hover state */
+.wrapper-dropdown-5 .dropdownset li:hover a {
+    color: #FFFFFF;
+}
+#dd{
+position:float;
+margin-top:-80px;
+margin-left:83%;
+ -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   
+}
+/* Active state */
+.wrapper-dropdown-5.active {
+    border-radius: 0px 0px 0 0;
+    background:  #80b300;
+    box-shadow: none;
+    border-bottom: none;
+    color: white;
+}
+.wrapper-dropdown-5.active:after {
+    border-color: #82d1ff transparent;
+}
+.wrapper-dropdown-5.active .dropdownset {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 700px;
+	z-index:10000;
+	}
+	.chooseLanguagealignment{
+	border-bottom: 1px solid #e6e8ea;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+}
+.chooseLanguagealignment:hover{
+    color: white;
+}
+.englishAlignment{
+	border-bottom: 1px solid #e6e8ea;
+    color: #333;
+    display: block;
+    padding: 1px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+}
+.englishAlignment:hover{
+
+    color: white;
+}
+.hideList{display: none;}
+.showList{display: block;}
+/*h3{
+margin-right:-50px;
+margin-top:30px;
+}*/
+

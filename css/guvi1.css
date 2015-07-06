@@ -1,0 +1,437 @@
+ #cnt1 {            
+    width: 95%;
+     background-color:rgba(215, 212, 212, 0.88);
+     margin-bottom:70px;
+ }
+  
+ .feature{
+     padding: 20px 0;
+    text-align: center;
+ }
+.feature li{
+text-align:left;
+font-size:16px;
+padding:10px;
+}
+#forgot{
+	color: white;
+   
+text-decoration: none;
+
+
+  
+   
+
+}
+.center-block {
+ width:78%;
+    
+}
+.page-header {
+    border-bottom: 1px solid #fff;
+    margin: 40px 0 20px;
+    padding-bottom: 9px;
+}
+ .feature > div > div{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+ }
+ .feature > div:hover > div{
+    margin-top: -10px;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 5px;
+    background: rgba(232, 215, 215, 0.10);
+    transition: 0.3s;
+ }
+.img-circle {
+    border-radius: 0%;
+}
+body{
+font-family: "Verdana", Arial, serif;
+
+}
+hr{
+ border: 0; border-bottom: 1px dashed #ccc; background: #999;
+}
+.dropdown-menu
+{
+padding:10px;
+width:300%;
+}
+.navbar{
+
+background-color: #5cb85c;
+
+    
+
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 63px;
+    height: 63px;
+    padding-top: 0;
+}
+
+
+
+.form-input {
+    border: 2px solid #d9d7d5;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1em;
+    padding: 0.125em;
+    transition: border-color 0.2s ease-in-out 0s;
+    width: 200px;
+}
+.mbm {
+    margin-bottom: 0em;
+}
+.form-btn {
+    min-width:8.75em;
+}
+
+.btn {
+    background: none repeat scroll 0 0 #428bca;
+    border: 0 none;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "OpenSans",Helvetica,Arial,sans-serif;
+    font-size: 75%;
+    font-weight: bold;
+   
+    
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+    white-space: nowrap;
+}
+.form-input:focus {
+    border-color: #278998;
+    outline: medium none;
+}
+#footer{
+background-color: #5cb85c;
+color: #fff;
+}
+#footer .container a{
+color:white;
+text-decoration:none;
+}
+#footer .container li > a:hover > a:focus{
+background-color:transparent;
+color:#333;
+}
+
+
+/*panel*/
+body
+{
+    margin-top:70px;
+
+}
+#row
+{
+margin-top:80px;
+
+}
+
+.panel
+{
+    text-align: center;
+
+}
+.panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
+.panel-body
+{
+    padding: 0px;
+    text-align: center;
+}
+
+.the-price
+{
+    background-color: rgba(220,220,220,.17);
+    box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.the-price h1
+{
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.subscript
+{
+    font-size: 25px;
+}
+
+/* CSS-only ribbon styles    */
+.cnrflash
+{
+    /*Position correctly within container*/
+    border-radius: 3px 5px 3px 0;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    right: -5px;
+    top: -9px;
+    width: 100px;
+    z-index: 1;
+}
+.cnrflash-inner
+{
+    /*Set position, make larger then 			container and rotate 45 degrees*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 145px;
+    height: 145px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -o-transform: rotate(45deg); /* Opera */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
+    -ms-transform-origin: 100% 100%;  /* IE 9 */
+    -o-transform-origin: 100% 100%; /* Opera */
+    -moz-transform-origin: 100% 100%; /* Firefox */
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1,1,1,.2) 50%);
+    background-size: 4px,auto, auto,auto;
+    background-color: #aa0101;
+    box-shadow: 0 3px 3px 0 rgba(1,1,1,.5), 0 1px 0 0 rgba(1,1,1,.5), inset 0 -1px 8px 0 rgba(255,255,255,.3), inset 0 -1px 0 0 rgba(255,255,255,.2);
+}
+.cnrflash-inner:before, .cnrflash-inner:after
+{
+    /*Use the border triangle trick to make  				it look like the ribbon wraps round it's 				container*/
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border: 8px solid #800000;
+}
+.cnrflash-inner:before
+{
+    left: 1px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.cnrflash-inner:after
+{
+    right: 0;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.cnrflash-label
+{
+    /*Make the label look nice*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(1,1,1,.8);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
+}
+.featured{
+transform: scale(1.1);
+-ws-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+
+}
+.img-circle {
+    border-radius: 0%;
+}
+.panel-info .panel-heading {
+    background:#428bca;
+    border-color: #428bca;
+    color: white;
+}
+.panel-info {
+    border-color: #428bca;
+}
+.panel-primary .panel-heading {
+     background:#428bca;
+    border-color: #428bca;
+    color: #fff;
+}
+.panel-heading {
+    
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 20px 15px;
+}
+.panel-success  .panel-heading {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    color: white;
+}
+.panel-success {
+    border-color: #5cb85c;
+}
+.panel-title {
+    color: inherit;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.panel-footer {
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align:right;
+}
+/*ribbon*/
+.ribbon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.ribbon .text, .ribbon .banner, .ribbon a {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+.ribbon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ribbon .banner {
+    color: #fff;
+    display: block;
+    float: right;
+    position: relative;
+    right: -14px;
+    top: 22px;
+    transform: rotate(45deg);
+-ws-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+    width: 100px;
+}
+
+
+.ribbon .banner:after, .ribbon .banner:before {
+    content: "";
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 30px;
+}
+
+
+.ribbon .banner:before {
+    left: -45px;
+    transform: skewY(-45deg) translate(50%, 15px);
+-ms-transform: skewY(-45deg) translate(50%, 15px); /* IE 9 */
+    -webkit-transform: skewY(-45deg) translate(50%, 15px); /* Chrome, Safari, Opera */
+    transform-origin: 100% center 0;
+-ms-transform-origin: 100% center 0;
+-webkit-transform-origin: 100% center 0;
+}
+
+.ribbon .banner:after {
+    right: -17px;
+    transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+-ms-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+-webkit-transform: translate(100%, -100%) skewY(45deg) translateX(-58%);
+    transform-origin: 0 center 0;
+-ms-transform-origin: 0 center 0;
+-webkit-transform-origin: 0 center 0;
+}
+
+.ribbon .text {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    min-height: 18px;
+    padding: 6px 0;
+    position: relative;
+    
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    
+    z-index: 2;
+}
+
+.ribbon .text:before, .ribbon .text:after {
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.ribbon.ribbon-small .text:before, .ribbon.ribbon-small .text:after {
+    height: 20px;
+}
+
+.ribbon .text:before {
+    transform: translateX(-15%) skewX(-45deg);
+-ms-transform: translateX(-15%) skewX(-45deg); /* IE 9 */
+    -webkit-transform: translateX(-15%) skewX(-45deg); /* Chrome, Safari, Opera */
+}
+.ribbon .text:after {
+    transform: translateX(15%) skewX(45deg);
+-ms-transform:  translateX(15%) skewX(45deg); /* IE 9 */
+    -webkit-transform:  translateX(15%) skewX(45deg); /* Chrome, Safari, Opera */
+}
+
+
+.ribbon-black .banner:after, .ribbon-black .banner:before {
+    background-color: #222222;
+}
+.ribbon-black .text:before, .ribbon-black .text:after, .no-css-transforms .ribbon-black .text {
+    background-color: #444444;
+}
+.ribbon-blue-light .banner:after, .ribbon-blue-light .banner:before {
+    background-color: #428bca;
+}
+.ribbon-blue-light .text:before, .ribbon-blue-light .text:after, .no-css-transforms .ribbon-blue-light .text {
+    background-color: #428bca;
+}
+.main-page-header {
+    background: url("../../images/blk40p.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    clear: both;
+    margin: -4% 0 2%;
+    position: relative;
+    z-index: 1;
+width:100%;
+margin-top:5%;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+

@@ -1,0 +1,82 @@
+<html lang="en">
+    
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="GUVI - SHARE WHAT YOU KNOW ">
+            <meta name="guvi" content="Your name">
+            <title>GUVI - Learn & Share in your native language</title>
+            <!-- Bootstrap -->
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+                    <link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/guvi1.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+            <link href="css/font-awesome.min.css" rel="stylesheet">
+             
+             <link href="css/reg.css" rel="stylesheet">
+             
+    
+<style>
+.panel-body
+{
+padding:10px;
+}
+</style>
+ <script type="text/javascript">
+var pageNo=4.3;
+
+</script>
+</head>
+<body>       
+    <div id="session_menu"></div>
+    <!--<div id="after"></div>  -->
+<div class="container" id="container1">
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+                <div class="panel panel-default">
+<div id="result">
+    </div> 
+
+		
+                </div>
+            </div>
+        </div>
+    </div>     
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/session_details.js"></script>
+		<script type="text/javascript" src="js/loadmenu.js"></script>
+		<script type="text/javascript" src="js/test.js"></script>
+		<script type="text/javascript" src="js/store.js"></script>
+		<script type="text/javascript" src="js/result.js"></script>
+		<script>
+	
+	var video_reg=gsession.getSession('is_reg_video_now');
+	var mentor_reg=gsession.getSession('is_reg_mentor_now');
+	//console.log(mentor_reg);
+	//alert(mentor_reg);
+	var hash_val=gsession.getSession('hash_val');
+	var lang=gsession.getSession('lang');
+	var cuser=gsession.getSession('cusername');
+	alert(gsession.getSession('r_name'));
+	var video_come=gsession.getSession('video_come_menti');
+	
+		if(video_come==1){
+				//alert("hai");
+		}
+	else if(mentor_reg!=2){
+		if(hash_val){
+		
+		window.location="index.html";
+			}
+	}
+		$(document).ready(function() {
+		var mail=gsession.getSession('r_name');
+		$('.studentname').text(mail);
+		});
+	</script>
+
+<div id="footer"></div>
+
+</body>
+</html>

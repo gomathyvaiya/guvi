@@ -1,0 +1,87 @@
+
+     #registration {
+        float: center;
+            color: #fff;
+            background: none repeat scroll 0 0 #ff6600;
+            margin: 100px 0 0 450px;
+            width: 300px;
+
+            }
+     #registration a {
+      color: white;
+      
+      }
+      #registration a:hover {
+      color: white;
+      
+      }
+      
+#registration fieldset {
+      padding: 15px;
+      }
+	input.text {
+      font-size: 14px;
+      height: 20px;
+      width: 240px;
+      padding: 7px 0px 7px 5px;
+      color:#333;
+      
+      margin-bottom: 0px;
+}     
+
+
+    
+#registerNew {
+    width:245px;
+    margin-left:0px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    }
+    
+    
+    
+ #registration p {
+      position: relative;
+      margin-bottom: 0px;
+      }
+     
+
+
+.para{
+    font-size: 18px;
+    height:30px;
+    padding: 15px 20px 0 10px;
+    border-bottom: 1px solid white;
+
+}
+#fbReg {
+    width: 284px;
+    height: 40px;
+    border: none;
+    text-indent: -9999px;
+    background: url('../img/fbnew2.png') no-repeat;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
+
+    
+    .or{
+        margin-top: 60px;
+        font-size: 15px;
+        font-weight: bold;
+       
+      }
+      .signin{
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+      }
+     .signin p{
+      font-size: 13px;
+      color:black;
+     }
+     .dialogbox{margin-top:-500px;width:100%; height:700px;position:absolute; background:grey;display:none;opacity: 0.95;z-index: 1;}
+      .dialogbox .fbpopup{z-index: 10;background:white;opacity: 1;}

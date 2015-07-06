@@ -1,0 +1,172 @@
+#divTopic{
+
+color:black;
+}
+
+#container{
+
+width:100%;
+height:100%;
+
+}
+#cprogram{
+padding-left:25px;
+width:100%;
+height:40px;
+margin-top:50px;
+
+}
+
+#HeaderFont h3{
+color: white;
+width:100%;
+}
+#menu_style{
+position:fixed;
+z-index:10000;
+width:100%;
+}
+/*#hide_mclick{
+
+margin-left: 50px;
+height:340px;
+width:880px;
+position: absolute;
+z-index:10000;
+background-color: red;
+opacity: 0;
+}*/
+
+#layer{
+/*margin-top:10px;*/
+margin-left: 50px;
+height:60%;
+width:53%;
+
+z-index: 0;
+}
+
+
+
+#box img{
+	display: block;
+	float: left;
+}
+#box{
+	height:145px;
+	width: 53%;
+	margin-left: 50px;
+	position: relative;
+	top: 60%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin-top: 2%;
+}
+
+#box, #thumbs {
+	
+	overflow: hidden;
+}
+
+
+#thumbs {
+	height: 120px;
+	padding: 10 10 30 10;	
+	width: 720px;
+	margin-left: 75px;
+	
+}
+#thumbs img {
+	
+	padding: 5px;
+	margin: 0 12px 0 12px;
+	cursor: pointer;
+
+}
+.carousel.hidden{
+	display: none;
+}
+.carousel.show{
+	display: block;
+}
+#thumbs img.selected  {
+	padding: 5px;
+	margin: 0 12px 0 12px;
+	border: 4px solid white;
+}
+
+
+#prev, #next {
+	width: 18px;
+	height: 25px;			
+	display: block;				
+	background: transparent url(../img/carousel_control.png) no-repeat 0 0;
+	position: absolute;
+	bottom: 70px;
+	text-indent: -999em;				
+}
+#prev {
+	background-position: 0 0;
+	left: 15px;
+}
+#prev:hover {
+	left: 14px;
+}			
+#next {
+	background-position: -18px 0;
+	right: 15px;
+}
+#next:hover {
+	right: 14px;
+}	
+#box .pager {
+    margin:0 auto;
+   
+
+}
+/* Style the pagination button with dot */
+/* Same as prev and next button, we use the same css sprite */
+#box .pager a {
+    margin: 0 3px 0 0;
+    text-decoration: none;
+    display:inline-block;
+    width:0.2px;
+    height:0.2px;
+    background:transparent;
+    border-color: green;
+    text-indent:-990em;
+}
+#box .pager a.selected {
+    text-decoration: none;
+    background: transparent; 
+    border-color: white;
+}
+
+#thumbs .carousel {
+	display: block;
+	float: left;
+	width: 135px;
+	height: 110px;
+	margin: 0 1px 1px 0;
+}
+
+#thumbs .carousel div {
+	background: transparent; 
+    background-color:black;
+    width: 115px;
+	height: 105px;
+	margin-left: 10px;
+}
+
+#thumbs .carousel div p {
+	font-weight: bold;
+	font-size: 0.8em;
+	line-height: 20px;
+	background-color:black;
+	height: 100px;
+	width: 130px;
+	color:white;
+	opacity:1;
+	text-align: center;
+	cursor: pointer;
+}

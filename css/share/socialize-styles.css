@@ -1,0 +1,37 @@
+#socializethis {
+	background:  peru;
+	border:solid 1px #CCC;
+	border-width: 1px 0 0 1px;
+/* height and width hardcoded into socialize.js */
+	height:45px; 
+	width:160px; 
+	position:fixed;
+	bottom:0;
+	right:0;
+	padding:21px 5px;
+	overflow:hidden; 
+	/* CSS3 */
+	-webkit-border-top-left-radius: 12px;
+	-moz-border-radius-topleft: 12px;
+	border-top-left-radius: 22px;
+	-moz-box-shadow: -3px -3px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: -3px -3px 3px rgba(0,0,0,0.5);
+	box-shadow: -3px -3px 3px rgba(0,0,0,0.5);
+	filter:  progid:DXImageTransform.Microsoft.dropshadow(OffX=-3px, OffY=-3px, Color='#CCC'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=-3px, OffY=-3px, Color='#CCC')"; /* IE8 */
+}
+ 
+#socializethis a {
+	float:left; 
+	width:25px;
+	margin:3px 2px 2px 2px; 
+	padding:0; 
+}
+ 
+#socializethis span { 
+	float:left; 
+	margin:2px 3px; 
+	
+	color:white;
+	font-size:12px;
+}

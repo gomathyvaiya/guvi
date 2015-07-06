@@ -1,0 +1,167 @@
+
+
+#wishborder{
+    border-style:solid;
+    border-width:5px;
+    border:0px solid #27ae60;
+    border-style: thick double;
+    border-spacing:10px;
+    margin:0px 60px 0px 30px ; 
+    padding:10px;
+    background-color:#2ecc71;
+}
+
+#wrapper
+{
+    width:85%;
+    margin: 0 auto;
+    margin-top:0px;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 25px;
+   /* border:1px solid black;
+    border:none;*/
+}
+.serviceBox {
+    float:left;
+    width:24%;
+    padding:10px 25px 0 28px;
+    margin:20px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+    height: 70px;
+    background-color: #ecf0f1;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*  -moz-box-shadow: 0 0 10px #bdbdbd;
+    -webkit-box-shadow: 0 0 10px #bdbdbd;
+    box-shadow: 0 0 10px #f1c40f;*/
+    transition: background-color 0.4s, color 0.4s;
+    color: #34495e;
+	width:220px;
+}
+
+.box1{
+    border:2px solid #3498db;
+}
+
+.box1:hover{
+    background-color: #3498db;
+    color: white;
+}
+
+.box2{
+    border:2px solid #9b59b6;
+}
+
+.box2:hover {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.box3{
+    border:2px solid #2ecc71;
+}
+
+.box3:hover {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.box4{
+    border:2px solid #f1c40f;
+}
+
+.box4:hover {
+    background-color: #f1c40f;
+    color: white;
+}
+
+.box5{
+    border:2px solid #e67e22;
+}
+
+.box5:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+.box6{
+    border:2px solid #e74c3c;
+}
+
+.box6:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.box7{
+    border:2px solid #7f8c8d;
+}
+
+.box7:hover {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+/*.follow{
+cursor: pointer;	
+	}
+a:link {color:red ; !important
+
+
+} */   
+.follow {
+    color:#ecf0f1;
+}
+
+.label {
+    float: right;
+    margin-right: 10px;
+    margin-top: -18px;
+}
+ 
+a:hover { 
+   color: white ;
+   text-decoration: none;
+   cursor:pointer;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.addNewTopic  {
+    margin: 0px 0 20px 50px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.addNewTopic h3 {
+    color: #34495e;
+    margin-left: 0px;
+}
+
+.addNewTopic input {
+    border-radius: 0px;
+    width: 278px;
+    height: 40px;
+    font-size: 24px;
+    margin-right: 10px;
+    letter-spacing: 0px;
+}
+
+.addNewTopic button {
+    height: 40px;
+    margin-bottom: 11px;
+    width: 80px;
+}

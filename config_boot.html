@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="GUVI - SHARE WHAT YOU KNOW ">
+        <meta name="guvi" content="Your name">
+        <title>GUVI</title>
+        <!-- Bootstrap -->
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="css/bootstrap.css" rel="stylesheet">
+	<!--<link href="css/boot-business.css" rel="stylesheet">-->
+	<link href="css/admin.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/dataTables.bootstrap.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+	
+</head>
+<body id="configure">
+<div id="admin_menu"></div>
+<h2 align="center">Bootcamp Listing</h2>
+<br>	
+<div class="container"  style="background-color:#fff">
+	<div class="row row-centered">
+		<div class="col-xs-12 col-centered" >
+
+<form role="form" id="b_admin" name="b_admin" action="" accept-charset="UTF-8" method="post">
+<a href="add_boot.html"><button type="button" id="add" class="btn btn-success" style="position:relative;float:right">
+     Add Bootcamp
+    </button></a><br>
+			 <table class="table table-bordered  table-hover" id="example" border="1px" style="text-align:center">
+				<thead >
+				    <tr class="filters" >
+					<th >Action</th>
+					<th >Bootcamp</th>
+				        <th >Date</th>
+					<th >Price</th>
+					<th >Total Count</th>
+					
+					
+				        
+				    </tr>
+				</thead>
+					<tbody id="tabledata" >         
+			      
+					</tbody>           
+		    	</table>
+<center>
+		
+			
+</center>
+</form>
+
+
+</div>
+    
+  </div>
+
+</div>
+
+
+<div id="footer"></div>
+
+<form role="form-group" id="add" name="add" action="" accept-charset="UTF-8" method="post">
+
+  <div id="mymodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       <center> <h3 >Bootcamps Info</h3></center>
+      
+        <br>
+
+<fieldset style="padding-left:20%">
+<div class="col-md-9" >
+				<label>Bootcamp Name</label>
+				<div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-caret-square-o-down"  ></i></span>
+                                <input id="name" name="name" type="text" class="form-control name" placeholder="Bootcamp Name" />
+                             	</div><label>Date</label>
+					<div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"  ></i></span>
+                                            <input id="event_date" class="datepicker" name="event_date" type="text" class="form-control" />
+                                        </div><label>Price</label>
+					<div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-inr"  ></i></span>
+                                            <input id="price" name="price" type="text" class="form-control" placeholder="Price" />
+                                       </div><label>Total Count</label>
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                                            <input id="count" name="count" type="text" class="form-control" placeholder="Total Count" />
+                                        </div>
+		<center>
+			<button id="submit" type="button" class="btn btn-success" name="enter" >Add</button>
+		</center>
+<br>
+</div></center>
+</fieldset>
+
+</form>   
+
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/session_details.js"></script>
+	 <script type="text/javascript" src="js/framework.js"></script>
+        <script type="text/javascript" src="js/admin_menu.js"></script>
+	<script type="text/javascript" src="js/config_boot.js"></script>
+	<script type="text/javascript" src="js/ment_admin.js"></script>
+	<script type="text/javascript" src="js/edit.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script>
+$(document).ready(function() {
+	$(".datepicker").datepicker();
+
+	});
+
+</script>
+ <style>
+.datepicker{z-index:1151 !important;}
+</style>         
+</body>
+</html>

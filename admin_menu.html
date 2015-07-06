@@ -1,0 +1,84 @@
+<style>
+body#admin a#nav-admin,
+body#configure a#nav-configure,
+{
+ background: none repeat scroll 0 0 #009900;
+    border: 0 none;
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "OpenSans",Helvetica,Arial,sans-serif;
+    font-size: 75%;
+    font-weight: bold;
+text-align: center;
+    text-transform: uppercase;
+    transition: background 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+    white-space: nowrap;
+}
+.a
+{float:right;
+}
+
+</style>
+
+<div class="col-xs-12 col-centered">
+<div class="navbar navbar-default navbar-fixed-top" style=" padding-top:0px; padding-bottom:10px;height:5%">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="admin.html">Guvi</a>
+        </div>
+        <center>
+	 <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                <li>
+                    <a href="mentor_admin.html"  title="admin" id="nav-admin">Admin</a>
+                </li>
+                <li>
+                    <a href="config_boot.html" title="add/edit/delete" id="nav-configure">Configuration</a>
+                </li>
+		</ul>
+          
+	
+                
+                        <div class="nav navbar-nav navbar-right">
+			<ul class="list-unstyled"><li >
+                            <button id="logout_ment" type="button" class="btn btn-success">Log Out</button>
+                        </div>
+</div>
+          	
+	</div>
+	</div>
+</div>
+</div>
+
+<script>
+$('#logout_ment').click(function() {
+		
+		gsession.clearSession('hash_val');
+		gsession.clearSession('lang');
+		gsession.clearSession('mail');
+		gsession.clearSession('mail');
+		gsession.clearSession('cusername');
+		gsession.clearSession('is_reg_video_now');
+		gsession.clearSession('is_reg_mentor_now');
+		gsession.clearSession('is_login_video');
+		gsession.clearSession('video_come_menti');
+		gsession.setSession('after_admin_logout','1');
+		
+		window.location = "index.html";		
+		
+	
+});	
+var admin1=gsession.getSession('after_admin_logout');
+	
+	if(admin1==1)
+		{
+			window.location="index.html";
+		}
+</script>

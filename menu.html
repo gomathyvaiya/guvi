@@ -1,0 +1,103 @@
+<style>
+body#home a#nav-home,
+body#video a#nav-video,
+body#bootcamp a#nav-bootcamp,
+body#mentor a#nav-mentor,
+body#regis a#nav-video  
+{
+ background: none repeat scroll 0 0 #009900;
+    border: 0 none;
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "OpenSans",Helvetica,Arial,sans-serif;
+    font-size: 75%;
+    font-weight: bold;
+
+   text-align: center;
+    text-transform: uppercase;
+    transition: background 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+    white-space: nowrap;
+}
+.a
+{float:right;
+}
+
+</style>
+<script src="js/user_login.js"></script>
+<div class="col-xs-12 col-centered">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Guvi</a>
+        </div>
+        <center>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html"  title="Home" id="nav-home">Home</a>
+                </li>
+                <li>
+                    <a href="video_info.html" title="Start Learning" id="nav-video">Videos</a>
+                </li>
+                <li>
+                    <a href="bootcamp_info.html" title="Attend Bootcamp" id="nav-bootcamp">BootCamp</a>
+                </li>
+                <li>
+                    <a href="mentor_info.html" title="Get placed" id="nav-mentor">Mentorship</a>
+                </li>
+                <li>
+                    <a href="#" title="" data-toggle="tab">Blog</a>
+                </li>
+            </ul><div class="hide_login" style="display:none;">
+                <div class="navbar-form navbar-right " role="search">
+                    <div class="form-group">
+                        <input type="text" id="login_email" class="form-input" name="login_email" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login_password" class="form-input" name="login_password" placeholder="Password">
+
+                    </div>
+                    <button id="login_button" type="submit" class="btn btn-default">Sign In</button>
+
+
+                </div>
+		<div class="col-xs-3 pull-right"><a href="#" id="forgot">Forgot Password?</a></div></div>
+
+            </div>
+
+        </center>
+    </div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+ 	var video_reg=gsession.getSession('is_reg_video_now');
+	var mentor_reg=gsession.getSession('is_reg_mentor_now');
+	//console.log(video_reg);
+	//console.log(mentor_reg);
+	var hash_val=gsession.getSession('hash_val');
+	var lang=gsession.getSession('lang');
+	var cuser=gsession.getSession('cusername');
+//alert(hash_val);
+	if(video_reg=='1' || mentor_reg=='1' || hash_val){
+
+		$(".hide_login").hide(); 
+		$("#nav-video").attr("href", "PublicPlaylists.html")
+   
+	}
+	else{
+		$(".hide_login").show();
+	}
+	
+});
+</script>
+
+
